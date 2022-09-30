@@ -1,0 +1,164 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+ background-color: hsl(235, 21%, 11%);
+ background-image: url(./images/bg-desktop-dark.jpg);
+ background-image: url(./images/bg-desktop-light.jpg);
+ background-repeat: no-repeat;
+ color: white;
+}
+main{
+ margin: 0 auto;
+}
+.hidden {
+ display: none;
+}
+.never div {
+ display: none;
+}
+.cleared{
+   display: none;
+}
+.main {
+ margin: 10% auto;
+ width: 50%;
+ display: flex;
+ flex-direction: column;
+ gap: 1em;
+}
+.sun-moon {
+ /* width: 50%; */
+}
+.todo-header {
+ display: flex;
+ /* width: 100%; */
+ justify-content: space-between;
+ margin-bottom: 1em;
+}
+.todo-creator {
+ width: 100%;
+ display: flex;
+ /* justify-content: space-between; */
+ background-color: hsl(235, 24%, 19%);
+ gap: 1em;
+ padding: 1em;
+}
+.todo-input {
+ width: 90%;
+}
+.input {
+ width: 100%;
+ background-color: hsl(235, 24%, 19%);
+ border: none;
+ color: hsl(234, 39%, 85%);
+}
+
+.complete {
+ color: hsl(233, 14%, 35%);
+ text-decoration: line-through;
+}
+li {
+ display: flex;
+ /* text-decoration: line-through; */
+ gap: 1em;
+ padding: 1em;
+ /* color: hsl(233, 14%, 35%); */
+ color: hsl(234, 39%, 85%);
+ width: 100%;
+ background-color: hsl(235, 24%, 19%);
+ border-bottom: 0.1px solid hsl(234, 11%, 52%);
+}
+.listx {
+   color: hsl(235, 19%, 35%);
+   background-color: hsl(0, 0%, 98%);
+}
+li:last-child{
+ /* background-color: red; */
+ border-bottom: transparent;
+}
+hidden {
+ display: none;
+}
+.flex {
+ display: flex;
+ justify-content: space-between;
+ width: 90%;
+}
+
+.todo-checkbox{
+ width: 1.3em;
+ /* background-color: aliceblue; */
+ height: 1.2em;
+ border: 1px solid gray;
+ border-radius: 50%;
+}
+/* .img {
+ margin-top: -2px;
+ margin-left: -2px;
+ display: none;
+} */
+.check {
+ width: 100%;
+ /* display: none; */
+ /* margin-bottom: 10px; */
+ /* padding: ; */
+
+ margin-top: -2px;
+ margin-left: -2px;
+  width: 1.4em;
+   height: 1.3em;
+   border: 1px solid gray;
+   box-sizing: border-box;
+   border-radius: 50%;
+   background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+.footer {
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+ cursor: pointer;
+ /* border-bottom: 1px solid blue; */
+}
+.mobilef div:hover{
+   color: rgb(58, 58, 206);
+}
+.checkbox {
+ width: 100%;
+ height: 1em;
+}
+.phone-footer {
+ display: flex;
+ justify-content: space-between;
+ width: 35%;
+}
+.phone-footer div:hover{
+ color: rgb(59, 59, 171);
+}
+.uncompleted {
+   width: 100%;
+}
+.delete-todo img {
+   height: 15px;
+}
+.mobile{
+   display: none;
+}
+
+@media screen and (max-width: 800px) {
+   .main {
+         width: 80%;
+      }
+      .system{
+         display: none;
+      }
+      .mobile {
+         display: flex;
+      }
+      .phone-footer{
+         width: 100%;
+         /* justify-content: space-between; */
+      }
+}
